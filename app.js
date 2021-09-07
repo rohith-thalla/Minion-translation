@@ -11,7 +11,7 @@ function servercall(text){
 //function to handle error
 function errorhandler(error){
     console.log("error" + error);
-    alert("error at the server please try again later")
+    alert("Maximum server requests received, try again in an hour")
 }
 
 // function to fetch the data
@@ -23,5 +23,5 @@ function clickeventhandler(){
         .catch(errorhandler)      
 };
 
-
+alert("The server is restricted to only 5 trials per hour if you encounter an error try again after an hour")
 button.addEventListener("click",clickeventhandler)
